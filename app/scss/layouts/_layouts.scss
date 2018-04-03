@@ -3,3 +3,8 @@
 #responsive-wrapper {
   background: red;
 }
+
+.container {
+  position: relative;
+  z-index: $z-container;
+}

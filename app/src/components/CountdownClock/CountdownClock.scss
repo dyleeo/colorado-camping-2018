@@ -1,0 +1,29 @@
+.countdown-container {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+
+  .container {
+    padding: 10px 0px;
+    width: 50px;
+    text-align: left;
+
+    &.days {
+
+    }
+
+    &.hrs {
+
+    }
+
+    &.mins {
+
+    }
+
+    &.secs {
+
+    }
+  }
+}

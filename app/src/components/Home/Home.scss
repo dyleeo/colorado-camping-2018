@@ -1,13 +1,36 @@
-@import '../../../scss/main';
-
+@import './app/scss/main';
+//$smokescreen
 
 #Home {
+  color: #fff;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
 
-  
 
-  border: 1px solid black;
-  background-color: red;
-  font-family: 'MontserratLight';
-  //font-size: 50px;
-  @include text-setting('xl');
+  border: 30px solid #fff;
+  background: url('../assets/images/colorado_bg.jpg') center center;
+  background-size: cover;
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+
+    .hero-img-container {
+      width: 70vw;
+      max-width: 800px;
+      img {
+        width: 100%;
+      }
+    }
+
+    .hero-content {
+      width: 100%;
+    }
+
+  }
 }
