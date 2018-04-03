@@ -1,0 +1,8 @@
+@import 'font-functions';
+
+// CLEARFIX HACK
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
