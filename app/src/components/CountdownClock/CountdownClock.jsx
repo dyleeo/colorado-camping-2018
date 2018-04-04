@@ -59,18 +59,15 @@ class CountdownClock extends Component {
         seconds: seconds
       }
     });
-
-    //console.log(this.state.time);
-    console.log(this.timeinterval);
   }
 
   render() {
     return (
       <div className="countdown-container">
-        <div className="container days">D: {this.state.time.days}</div>
-        <div className="container hrs">H: {this.state.time.hours}</div>
-        <div className="container mins">M: {this.state.time.minutes}</div>
-        <div className="container secs">S: {this.state.time.seconds}</div>
+        <div className="container days"><span>DAYS</span>{this.state.time.days}</div>
+        <div className="container hrs"><span>HOURS</span>{this.state.time.hours}</div>
+        <div className="container mins"><span>MINUTES</span>{this.state.time.minutes}</div>
+        <div className="container secs"><span>SECONDS</span>{this.state.time.seconds}</div>
       </div>
     );
   }

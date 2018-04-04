@@ -1,7 +1,7 @@
 @import './app/scss/main';
 //$smokescreen
 
-#Home {
+#home {
   color: #fff;
   position: relative;
   width: 100%;
@@ -12,17 +12,19 @@
   border: 30px solid #fff;
   background: url('../assets/images/colorado_bg.jpg') center center;
   background-size: cover;
+  background-attachment: fixed;
 
   .container {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    text-align: center;
     height: 100%;
 
     .hero-img-container {
       width: 70vw;
-      max-width: 800px;
+      max-width: 1200px;
       img {
         width: 100%;
       }
@@ -30,7 +32,53 @@
 
     .hero-content {
       width: 100%;
+      min-height: 300px;
     }
 
+    .pexel {
+      position: absolute;
+      bottom: 8px;
+      right: 10px;
+      a {
+        font-size: 8px;
+        color: #fff;
+        text-decoration: none;
+      }
+    }
+
+    div.down-arrow {
+    	width: 40px;
+    	height: 40px;
+    	box-sizing: border-box;
+    	position: absolute;
+      left: 50%;
+    	bottom: 40px;
+    	transform: rotate(135deg) translateX(50%);
+
+    	&::before {
+    		content: '';
+    		width: 100%;
+    		height: 100%;
+    		border-width: 2px 2px 0 0;
+    		border-style: solid;
+    		border-color: #fafafa;
+    		display: block;
+    		transform-origin: 100% 0;
+    	}
+
+
+    	&:after {
+    		content: '';
+    		float: left;
+    		position: relative;
+    		top: -100%;
+    		width: 100%;
+    		height: 100%;
+    		border-width: 0 2px 0 0;
+    		border-style: solid;
+    		border-color: #fafafa;
+    		transform-origin: 100% 0;
+    	}
+    }
   }
 }

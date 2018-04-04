@@ -1,0 +1,51 @@
+@import './app/scss/main';
+//$smokescreen
+
+#info {
+  text-align: center;
+  height: 100vh;
+  
+  h1 {
+    padding: 100px 0 50px 0;
+  }
+
+  section.info-section {
+
+    font-family: 'Montserrat';
+    font-size: 14px;
+    color: #666;
+    background-color: #fff;
+    line-height: 1.5;
+
+    h2 {
+      padding: 50px 0 10px 0;
+      color: #333;
+    }
+
+
+    .panels-container {
+      display: flex;
+      flex: wrap;
+      width: 100%;
+      padding: 50px 5vw 50px 5vw;
+
+      article {
+        padding: 0 10px;
+
+
+        header {
+          font-size: 24px;
+          color: #999;
+          font-family: 'MontserratLight';
+          text-align: left;
+          padding-bottom: 10px;
+        }
+
+        .content-container {
+          background-color: #fafafa;
+        }
+      }
+    }
+  }
+
+}
