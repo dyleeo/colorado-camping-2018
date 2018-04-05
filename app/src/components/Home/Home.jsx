@@ -18,13 +18,10 @@ class Home extends Component {
           <div className="hero-content">
             <CountdownClock />
           </div>
-          <div className="pexel">
-            <a href="https://www.pexels.com/photo/mountain-and-lake-at-sunset-135157/">Photo by monicore - Pexels</a>
-          </div>
-
-          <div className="down-arrow">
-          </div>
-
+          <div className="down-arrow" />
+        </div>
+        <div className="pexel">
+          <a href="https://www.pexels.com/photo/mountain-and-lake-at-sunset-135157/">Photo by monicore - Pexels</a>
         </div>
       </div>
     );

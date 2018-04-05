@@ -1,8 +1,11 @@
-$breakpoints: (
-  small: 400px,
-  med: 640px,
-  large: 900px,
-  wide: 1100px,
-  mega: 1800px,
-  ultra: 2800px,
-  );
+$screen-xs: 767px;
+$screen-sm: 768px;
+$screen-md: 992px;
+$screen-lg: 1200px;
+$screen-xl: 1400px;
+
+@mixin xs { @media (min-width: #{$screen-xs}) {@content;} } // Tiny devices
+@mixin sm { @media (min-width: #{$screen-sm}) {@content;} } // Small devices
+@mixin md { @media (min-width: #{$screen-md}) {@content;} } // Medium devices
+@mixin lg { @media (min-width: #{$screen-lg}) {@content;} } // Large devices
+@mixin xl { @media (min-width: #{$screen-xl}) {@content;} } // Extra large devices

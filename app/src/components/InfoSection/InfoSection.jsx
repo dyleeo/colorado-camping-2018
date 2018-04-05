@@ -13,26 +13,22 @@ class InfoSection extends Component {
         <section className="info-section">
 
           <h2>It's Colorado or bust!</h2>
-          It started as a nonchalant challenge from Tito and Sewon during a fun-filled<br/>family gathering, and so planted was the seed of what this "camping" trip has eveolved into.
+          It started as a nonchalant challenge from Tito and Sewon during a fun-filled<br/>family gathering, and so planted was the seed of what this "camping" trip has evolved into.
 
 
           <div className="panels-container">
-            <article>
+            <article className="when">
               <header>WHEN</header>
               <div className="content-container">
                 August 4th, 2018
               </div>
             </article>
 
-            <article>
+            <article className="where">
               <header>WHERE</header>
               <div className="content-container">aaa</div>
             </article>
 
-            <article>
-              <header>HOW</header>
-              <div className="content-container">aaa</div>
-            </article>
           </div>
 
 

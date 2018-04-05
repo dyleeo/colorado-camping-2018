@@ -8,11 +8,21 @@
   height: 100vh;
   overflow: hidden;
 
-
   border: 30px solid #fff;
   background: url('../assets/images/colorado_bg.jpg') center center;
   background-size: cover;
   background-attachment: fixed;
+
+  .pexel {
+    position: absolute;
+    bottom: 8px;
+    right: 10px;
+    a {
+      font-size: 8px;
+      color: #fff;
+      text-decoration: none;
+    }
+  }
 
   .container {
     display: flex;
@@ -35,20 +45,9 @@
       min-height: 300px;
     }
 
-    .pexel {
-      position: absolute;
-      bottom: 8px;
-      right: 10px;
-      a {
-        font-size: 8px;
-        color: #fff;
-        text-decoration: none;
-      }
-    }
-
     div.down-arrow {
-    	width: 40px;
-    	height: 40px;
+    	width: 30px;
+    	height: 30px;
     	box-sizing: border-box;
     	position: absolute;
       left: 50%;
@@ -65,7 +64,6 @@
     		display: block;
     		transform-origin: 100% 0;
     	}
-
 
     	&:after {
     		content: '';
