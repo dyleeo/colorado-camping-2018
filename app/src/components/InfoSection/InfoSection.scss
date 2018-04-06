@@ -22,42 +22,43 @@
       color: #333;
     }
 
+    p {
+      max-width: 750px;
+      margin: 0 auto;
+    }
+
 
     .panels-container {
       display: flex;
-      flex: wrap;
       width: 100%;
       padding: 50px 5vw 50px 5vw;
+      flex-direction: column;
+      @include md { flex-direction: row; }
 
       article {
         padding: 0 10px;
-
-        @include md {
-          background: red;
-        }
+        margin: 20px 0;
+        flex-grow: 1;
+        @include md { margin: 0; }
 
         &.when {
-          //width: 30%;
-          flex-grow: 1;
+          text-align: center;
+          h1{
+            padding: 0;
+            font-family: 'MontserratLight';
+          }
+          //.b-content-container { background: transparent; }
         }
 
         &.where {
-          flex-grow: 3;
+          @include md { flex-grow: 3; }
+          .map-box {
+            height: 400px;
+            position: relative;
+          }
         }
 
-        header {
-          font-size: 24px;
-          color: #999;
-          font-family: 'MontserratLight';
-          text-align: left;
-          padding-bottom: 2px;
-        }
 
-        .content-container {
-          padding: 50px 0;
-          border-radius: 3px;
-          background-color: #fafafa;
-        }
       }
     }
   }
