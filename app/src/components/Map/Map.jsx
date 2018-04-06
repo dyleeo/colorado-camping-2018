@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
 import GoogleMapReact from 'google-map-react';
-import dotenv from 'dotenv'
-dotenv.config({path: './'})
 
 const AnyReactComponent = ({ text }) => <div >{text}</div>; //this can be styled or used with another comp
 

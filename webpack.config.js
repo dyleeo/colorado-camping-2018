@@ -9,6 +9,8 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 //clean out dir
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 
+const Dotenv = require('dotenv-webpack');
+
 const webpack = require('webpack');
 
 module.exports = {
@@ -103,6 +105,7 @@ module.exports = {
       filename: "./index.html"
     }),
     new webpack.NamedModulesPlugin(),
-    new webpack.HotModuleReplacementPlugin()
+    new webpack.HotModuleReplacementPlugin(),
+    new Dotenv()
   ]
 };
