@@ -1,9 +1,21 @@
 import React, { Component } from 'react';
 import GoogleMapReact from 'google-map-react';
+import mapStyles from '../../../assets/data/map_cleancut.json';
+import sign from '../../../assets/images/sign.png';
 
-const AnyReactComponent = ({ text }) => <div >{text}</div>; //this can be styled or used with another comp
+//<img className="sign-post" src={sign} />
+const AnyReactComponent = ({ text }) => <div className="map-info" >
+
+    {text}
+  </div>; //this can be styled or used with another comp
 
 class Map extends Component {
+
+  createMapOptions(maps) {
+    return {
+      styles: mapStyles
+    }
+  }
 
   render() {
     return (
@@ -11,6 +23,7 @@ class Map extends Component {
         bootstrapURLKeys={{ key: [process.env.GOOGLE_MAPS_API_KEY] }}
         defaultCenter={this.props.center}
         defaultZoom={this.props.zoom}
+        options={this.createMapOptions}
       >
         <AnyReactComponent
           lat={39.6528607}

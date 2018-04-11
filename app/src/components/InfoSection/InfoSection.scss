@@ -3,19 +3,25 @@
 
 #info {
   text-align: center;
+  background-color: #fff;
   // height: 100vh;
 
   h1 {
     padding: 100px 0 50px 0;
+    background: #333;
+    color:#fff;
+    font-family: 'MontserratThin';
   }
 
   section.info-section {
 
     font-family: 'Montserrat';
     font-size: 14px;
-    color: #666;
-    background-color: #fff;
+    color: #333;
     line-height: 1.5;
+
+    max-width: 1400px;
+    margin: 0 auto;
 
     h2 {
       padding: 50px 0 10px 0;
@@ -41,7 +47,34 @@
         flex-grow: 1;
         @include md { margin: 0; }
 
+        .b-content-container {
+          background: transparent;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          height: 400px;
+
+          .month {
+            font-family: 'MontserratThin';
+            font-size: 75px;
+            line-height: 1;
+          }
+          .day {
+            font-family: 'MontserratBlack';
+            font-size: 249px;
+            line-height: .7;
+          }
+          .year {
+            font-family: 'MontserratThin';
+            font-size: 81px;
+            line-height: 1;
+          }
+
+        }
+
         &.when {
+
           text-align: center;
           h1{
             padding: 0;
@@ -53,13 +86,62 @@
         &.where {
           @include md { flex-grow: 3; }
           .map-box {
-            height: 400px;
+            // height: 400px;
+            border: 10px solid #fafafa;
+            padding: 0;
             position: relative;
           }
         }
 
-
       }
     }
   }
+
+  section.venue-container {
+
+    margin-top: 100px;
+    border-top: 40px solid #fcfcfc;
+
+    .tent-container {
+      margin-top: 50px;
+      background: transparent;
+      .tent-header {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        .airbnb-logo {
+          width: 100px;
+          img {width: 100%;}
+        }
+        .airbnb-info {
+          width: 500px;
+          padding: 0 20px;
+          img {width: 100%;}
+        }
+      }
+    }
+
+    .visuals {
+
+      .house-pic {
+        border: 10px solid #fafafa;
+        max-width: 1000px;
+        margin: 50px auto;
+        img{ width: 100%;}
+      }
+    }
+  }
+
+
+  .map-info {
+    font-family: MontserratBold;
+    text-align: center;
+    .sign-post {
+      // margin-left: -15px;
+      // margin-top: -65px;
+    }
+  }
+
+
 }

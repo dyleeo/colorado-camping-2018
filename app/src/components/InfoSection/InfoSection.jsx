@@ -2,6 +2,10 @@ import React, { Component } from 'react';
 
 import Map from '../Map/Map';
 
+import airbnb from '../../../assets/images/airbnb.png';
+import airbnbInfo from '../../../assets/images/airbnb_logo.png';
+import tent from '../../../assets/images/tent.jpg';
+
 import './InfoSection.scss';
 
 class InfoSection extends Component {
@@ -24,19 +28,36 @@ class InfoSection extends Component {
             <article className="when">
               <header>WHEN</header>
               <div className="b-content-container">
-                <h1>August 4th, 2018</h1>
+                <div className="month">AUG</div>
+                <div className="day">4</div>
+                <div className="year">2018</div>
               </div>
             </article>
 
             <article className="where">
               <header>WHERE</header>
-              <div className="b-content-container map-box">
+              <div className="b-content-container map-box  shadow">
                 <Map  />
               </div>
             </article>
 
           </div>
 
+
+        </section>
+
+        <section className="venue-container">
+
+            <div className="b-content-container tent-container">
+              <div className="tent-header">
+                <div className="airbnb-logo"><img src={airbnb}/></div>
+                <div className="airbnb-info"><img src={airbnbInfo}/></div>
+              </div>
+
+              <div className="visuals">
+                <div className="house-pic shadow"><img src={tent}/></div>
+              </div>
+            </div>
 
         </section>
 
