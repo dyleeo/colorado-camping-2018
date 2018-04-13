@@ -11,7 +11,9 @@
   border: 30px solid #fff;
   background: url('../assets/images/colorado_bg.jpg') center center;
   background-size: cover;
-  background-attachment: fixed;
+  @include md {
+    background-attachment: fixed;
+  }
 
   .pexel {
     position: absolute;
